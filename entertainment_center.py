@@ -94,8 +94,4 @@ aguirre = media.Movie(
 movies = [dead_man, throne_of_blood, dangerous_liaisons, la_vie_d_adele, akira,
     aguirre]
 
-# fresh_tomatoes.open_movies_page(movies)
-
-# print(media.Movie.__name__)
-
-print(dead_man_story)
+fresh_tomatoes.open_movies_page(movies)
