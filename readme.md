@@ -36,4 +36,3 @@ ___
 Ohsoartsy is a combination of scripts that generate an html file which displays a grid of movies. Each movie is presented as a tile with a movie poster image, title and director/year. Hovering over the tile will display a brief storyline. Clicking on a tile will open a modal overlay with the movie's trailer.
 
 It is a static html page, the movie information is coded into the file `entertainment_center.py`. The file `media.py` provides the Movie() class, which is used to generate the instances of the movies.
-___
