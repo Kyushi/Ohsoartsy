@@ -2,7 +2,7 @@
 
 **This is a project created as an assignment for the Udacity Full Stack Web Developer Nanodegree.**
 
-**author: Adarsh Nair https://github.com/adarsh0806 (fresh_tomatoes.py + base code for everything else as well), Kyushi https://github.com/Kyushi**
+**author:** _Adarsh Nair_ https://github.com/adarsh0806 (fresh_tomatoes.py + base code for everything else as well), _Kyushi_ https://github.com/Kyushi
 ___
 
 ##### Prerequisites
