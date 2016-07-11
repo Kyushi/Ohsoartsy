@@ -114,7 +114,7 @@ throne_of_blood = media.Movie(
     tob_story,
     "Akira Kurosawa",
     "1957",
-    "https://didyouseethatone.files.wordpress.com/2015/03/throne-of-blood-1.jpg",
+    "https://didyouseethatone.files.wordpress.com/2015/03/throne-of-blood-1.jpg",  # NOQA
     "https://www.youtube.com/watch?v=PoYzsDVyFRU")
 
 # creating instance dangerous_liaisons
@@ -123,7 +123,7 @@ dangerous_liaisons = media.Movie(
     dl_story,
     "Stephen Frears",
     "1988",
-    "http://www.iwillnotdiet.com/wp-content/uploads/2013/03/dangerous-liaisons-poster.jpg",
+    "http://www.iwillnotdiet.com/wp-content/uploads/2013/03/dangerous-liaisons-poster.jpg",  # NOQA
     "https://www.youtube.com/watch?v=FbB2oBlP2uI")
 
 # creating instance la_vie_d_adele
@@ -132,7 +132,7 @@ la_vie_d_adele = media.Movie(
     lvda_story,
     "Abdellatif Kechiche",
     "2013",
-    "https://refractionsfilm.files.wordpress.com/2014/04/la-vie-dadele-a186d34e.jpg",
+    "https://refractionsfilm.files.wordpress.com/2014/04/la-vie-dadele-a186d34e.jpg",  # NOQA
     "https://www.youtube.com/watch?v=_krVNLB4N9A")
 
 # create instance akira
@@ -141,7 +141,7 @@ akira = media.Movie(
     akira_story,
     "Katsuhiro Otomo",
     "1988",
-    "http://images2.fanpop.com/image/photos/13800000/Akira-Poster-akira-13827706-1715-2439.jpg",
+    "http://images2.fanpop.com/image/photos/13800000/Akira-Poster-akira-13827706-1715-2439.jpg",  # NOQA
     "https://www.youtube.com/watch?v=FtPhrCTjMtQ")
 
 # create instance aguirre
@@ -150,7 +150,7 @@ aguirre = media.Movie(
     aguirre_story,
     "Werner Herzog",
     "1972",
-    "http://www.nitehawkcinema.com/wp-content/uploads/2014/08/aguirre-wrath-of-god-german-POSTER.jpg",
+    "http://www.nitehawkcinema.com/wp-content/uploads/2014/08/aguirre-wrath-of-god-german-POSTER.jpg",  # NOQA
     "https://www.youtube.com/watch?v=rLxCRNlQDx8")
 
 # create instance tokyo_drifter
