@@ -1,6 +1,6 @@
-### Kyushi's Udacity Full Stack Web Developer Nanodegree Movie Website project
+### Ohsoartsy
 
-__This is a project created as an assignment for the Udacity Full Stack Web Developer Nanodegree.__
+**This is a project created as an assignment for the Udacity Full Stack Web Developer Nanodegree.**
 
 
 ##### Prerequisites

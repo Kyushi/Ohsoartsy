@@ -50,6 +50,18 @@
             top: 0;
             background-color: white;
         }
+        .storyline {
+            display: None;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            background: rgba(233, 233, 233, .9);
+            text-align: justify;
+            z-index: 100;
+        }
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -68,6 +80,10 @@
               'src': sourceUrl,
               'frameborder': 0
             }));
+        });
+        // Display movie info when hovering over movie tile
+        $(document).on('mouseenter mouseleave', '.movie-tile', function() {
+            $(".storyline", this).toggle();
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
@@ -97,7 +113,7 @@
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#">Ohsoartsy</a>
           </div>
         </div>
       </div>
@@ -106,32 +122,94 @@
       
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="DDceawCF5Xk" data-toggle="modal" data-target="#trailer">
     <img src="http://movieposters.2038.net/p/Dead-Man.jpg" width="220" height="342">
-    <h2>Dead Man</h2>
+    <h4>Dead Man</h4>
+    <p>Jim Jarmusch (1995)</p>
+    <div class="storyline">
+        <h4>Dead Man</h4>
+        <p><b>Jim Jarmusch, 1995</b></p>
+        <p>
+Dead Man is the story of a young man's journey, both physically and spiritually, into very unfamiliar terrain. William Blake travels to the extreme western frontiers of America sometime in the 2nd half of the 19th century. Lost and badly wounded, he encounters a very odd, outcast Native American, named "Nobody", who believes Blake is actually the dead English poet of the same name. The story, with Nobody's help, leads William Blake through situations that are in turn comical and violent. Contrary to his nature, circumstances transform Blake into a hunted outlaw, a killer, and aman whose physical existence is slowly slipping away. Thrown into a world that is cruel and chaotic, his eyes are opened to the fragility that defines the realm of the living. It is as though he passes through the surface of a mirror, and emerges into a previously-unknown world that exists on the other side. (from IMDB.com)
+</p>
+    </div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="PoYzsDVyFRU" data-toggle="modal" data-target="#trailer">
     <img src="https://didyouseethatone.files.wordpress.com/2015/03/throne-of-blood-1.jpg" width="220" height="342">
-    <h2>Throne of Blood</h2>
+    <h4>Throne of Blood</h4>
+    <p>Akira Kurosawa (1957)</p>
+    <div class="storyline">
+        <h4>Throne of Blood</h4>
+        <p><b>Akira Kurosawa, 1957</b></p>
+        <p>
+After securing a major victory on the battlefield, Taketoti Washizu and one
+\of his commanders, Yoshiaki Miki, find themselves lost in the maze-like Spider's Web forest. They come across a spirit-like seer who tells them of their future: both have been promoted because of their victory that day; Washizu will someday be the Great Lord of the Spider's Web castle while Miki's son will someday rule as Great Lord as well. When they arrive at the castle, they learn that the first part of the prophecy is correct. Washizu has no desire to become Great Lord but his ambitious wife urges him to reconsider. When the current Great Lord makes a surprise visit to his garrison outpost, Washizu is again promoted to commander of his vanguard but his wife reminds him of the danger that comes with the position. As pressure mounts, Wahizu takes action leading to its inevitable conclusion. (from IMDB.com)
+</p>
+    </div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="FbB2oBlP2uI" data-toggle="modal" data-target="#trailer">
     <img src="http://www.iwillnotdiet.com/wp-content/uploads/2013/03/dangerous-liaisons-poster.jpg" width="220" height="342">
-    <h2>Dangerous Liaisons</h2>
+    <h4>Dangerous Liaisons</h4>
+    <p>Stephen Frears (1988)</p>
+    <div class="storyline">
+        <h4>Dangerous Liaisons</h4>
+        <p><b>Stephen Frears, 1988</b></p>
+        <p>
+In 18th century France, the Marquise de Merteuil and the Vicomte de Valmont play a dangerous game of seduction. Valmont is someone who measures success by the number of his conquests and Merteuil challenges him to seduce the soon to be married Cecile de Volanges and provide proof in writing of his success. His reward for doing so will be to spend the night with Merteuil. He has little difficulty seducing Cecile but what he really wants is to seduce Madame de Tourvel. When Merteuil learns that he has actually fallen in love with her, she refuses to let him claim his reward for seducing Cecile. Death soon follows. (from IMDB.com)
+</p>
+    </div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_krVNLB4N9A" data-toggle="modal" data-target="#trailer">
     <img src="https://refractionsfilm.files.wordpress.com/2014/04/la-vie-dadele-a186d34e.jpg" width="220" height="342">
-    <h2>La Vie d'Adele</h2>
+    <h4>La Vie d'Adele</h4>
+    <p>Abdellatif Kechiche (2013)</p>
+    <div class="storyline">
+        <h4>La Vie d'Adele</h4>
+        <p><b>Abdellatif Kechiche, 2013</b></p>
+        <p>
+Adele is a high school student who is beginning to explore herself as a woman. She dates men but finds no satisfaction with them sexually, and is rejected by a female friend who she does desire. She dreams of something more. She meets Emma who is a free spirited girl whom Adele's friends reject due to her sexuality, and by association most begin to reject Adele. Her relationship with Emma grows into more than just friends as she is the only person with whom she can express herself openly. Together, Adele and Emma explore social acceptance, sexuality, and the emotional spectrum of their maturing relationship. (from IMDB.com)
+</p>
+    </div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="FtPhrCTjMtQ" data-toggle="modal" data-target="#trailer">
     <img src="http://images2.fanpop.com/image/photos/13800000/Akira-Poster-akira-13827706-1715-2439.jpg" width="220" height="342">
-    <h2>Akira</h2>
+    <h4>Akira</h4>
+    <p>Katsuhiro Otomo (1988)</p>
+    <div class="storyline">
+        <h4>Akira</h4>
+        <p><b>Katsuhiro Otomo, 1988</b></p>
+        <p>
+Kaneda is a bike gang leader whose close friend Tetsuo gets involved in a government secret project known as Akira. On his way to save Tetsuo, Kaneda runs into a group of anti-government activists, greedy politicians, irresponsible scientists and a powerful military leader. The confrontation sparks off Tetsuo's supernatural power leading to bloody death, a coup attempt and the final battle in Tokyo Olympiad where Akira's secrets were buried 30 years ago. (from IMDB.com)
+</p>
+    </div>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="rLxCRNlQDx8" data-toggle="modal" data-target="#trailer">
     <img src="http://www.nitehawkcinema.com/wp-content/uploads/2014/08/aguirre-wrath-of-god-german-POSTER.jpg" width="220" height="342">
-    <h2>Aguirre, der Zorn Gottes</h2>
+    <h4>Aguirre, der Zorn Gottes</h4>
+    <p>Werner Herzog (1972)</p>
+    <div class="storyline">
+        <h4>Aguirre, der Zorn Gottes</h4>
+        <p><b>Werner Herzog, 1972</b></p>
+        <p>
+A few decades after the destruction of the Inca empire, a Spanish expedition leaves the mountains of Peru and goes down the Amazon river in search of gold and wealth. Soon, they come across great difficulties and Don Aguirres, a ruthless man who cares only about riches, becomes their leader. But will his quest lead them to "the golden city", or to certain destruction? (from IMDB.com)
+</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ICxuuh9DZeQ" data-toggle="modal" data-target="#trailer">
+    <img src="https://i.jeded.com/i/tokyo-drifter.17849.jpg" width="220" height="342">
+    <h4>Tokyo Drifter</h4>
+    <p>Seijun Suzuki (1966)</p>
+    <div class="storyline">
+        <h4>Tokyo Drifter</h4>
+        <p><b>Seijun Suzuki, 1966</b></p>
+        <p>
+Tetsu has joined his yakuza boss in going straight, but when a rival gang threatens to bring them back into the gang wars, Tetsu must become a drifter to keep the pressure off his old boss. (from IMDB.com)
+</p>
+    </div>
 </div>
 
     </div>

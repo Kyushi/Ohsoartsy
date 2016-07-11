@@ -56,6 +56,18 @@ main_page_head = '''
             top: 0;
             background-color: white;
         }
+        .storyline {
+            display: None;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            background: rgba(233, 233, 233, .9);
+            text-align: justify;
+            z-index: 100;
+        }
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -74,6 +86,10 @@ main_page_head = '''
               'src': sourceUrl,
               'frameborder': 0
             }));
+        });
+        // Display movie info when hovering over movie tile
+        $(document).on('mouseenter mouseleave', '.movie-tile', function() {
+            $(".storyline", this).toggle();
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
@@ -107,7 +123,7 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#">Ohsoartsy</a>
           </div>
         </div>
       </div>
@@ -124,7 +140,13 @@ main_page_content = '''
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
+    <h4>{movie_title}</h4>
+    <p>{movie_director} ({movie_year})</p>
+    <div class="storyline">
+        <h4>{movie_title}</h4>
+        <p><b>{movie_director}, {movie_year}</b></p>
+        <p>{movie_storyline}</p>
+    </div>
 </div>
 '''
 
@@ -145,7 +167,10 @@ def create_movie_tiles_content(movies):
         content += movie_tile_content.format(
             movie_title=movie.title,
             poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id
+            trailer_youtube_id=trailer_youtube_id,
+            movie_storyline=movie.storyline,
+            movie_director=movie.director,
+            movie_year=movie.year
         )
     return content
 
